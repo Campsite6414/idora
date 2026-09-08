@@ -6,33 +6,34 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #111;
+  color: #000;
   font-family: Georgia, 'Times New Roman', serif;
   line-height: 1.5;
 }
 
-header {
-  background-color: #1a2238;
+/* Banner header - grayscale photo style */
+header.banner {
+  width: 100%;
+  height: 220px;
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  border-bottom: 3px solid #000;
+}
+
+header.banner h1 {
   color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 4px solid #2e3a5c;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-header p {
-  margin-top: 10px;
+  font-size: 3.2em;
   font-style: italic;
-  color: #b8c0d8;
+  font-family: Georgia, serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin: 0;
 }
 
-/* Layout: sidebar + main content side by side */
 .page-layout {
   display: flex;
   max-width: 1100px;
@@ -42,22 +43,117 @@ header p {
   align-items: flex-start;
 }
 
-/* Sidebar navigation */
+/* Sidebar - boxed nav, like the original "Navigation" panel */
 nav.sidebar {
   width: 200px;
   flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  border: 1px solid #999;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+nav.sidebar .nav-title {
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 nav.sidebar a {
   display: block;
-  background-color: #1a2238;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 10px;
-  text-decoration: none;
+  color: #0000cc;
+  text-decoration: underline;
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+nav.sidebar a:hover {
+  color: #cc0000;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Italic script-style section titles, like "Site News" */
+h2.section-title {
+  font-family: Georgia, serif;
+  font-style: italic;
   font-weight: bold;
-  letter-spacing: 1px;
-  border: 2px solid
+  font-size: 2.2em;
+  color: #222;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.park-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.park-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.thumb-placeholder {
+  width: 70px;
+  height: 70px;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  color: #999;
+  text-align: center;
+}
+
+.park-list a {
+  color: #0000cc;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.park-list a:hover {
+  color: #cc0000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  nav.sidebar {
+    width: 100%;
+  }
+
+  header.banner h1 {
+    font-size: 2em;
+  }
+
+  header.banner {
+    height: 140px;
+    padding-left: 20px;
+  }
+}
