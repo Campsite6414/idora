@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,104 +32,32 @@ header p {
   color: #b8c0d8;
 }
 
-main {
-  max-width: 900px;
+/* Layout: sidebar + main content side by side */
+.page-layout {
+  display: flex;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px 20px;
-}
-
-/* News-post style entries, like the archived site */
-.news-entry {
-  display: flex;
-  gap: 25px;
+  gap: 30px;
   align-items: flex-start;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
 }
 
-.news-entry img {
-  width: 280px;
-  max-width: 100%;
-  border: 3px solid #1a2238;
+/* Sidebar navigation */
+nav.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav.sidebar a {
   display: block;
-}
-
-.news-entry .news-text {
-  flex: 1;
-  min-width: 250px;
-}
-
-.news-date {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #111;
-  margin: 0 0 10px 0;
-}
-
-.news-text p {
-  font-size: 1.1em;
-  margin: 0;
-}
-
-/* Section headers, bold + underlined like "Site News Archive" */
-h2.section-title {
-  font-size: 2em;
-  font-weight: bold;
-  text-decoration: underline;
-  color: #1a2238;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 8px 0;
-  border-bottom: 1px dashed #ccc;
-}
-
-a {
-  color: #1a2238;
+  background-color: #1a2238;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 10px;
   text-decoration: none;
   font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #4a5a8a;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85em;
-  color: #777;
-  border-top: 1px solid #ccc;
-  margin-top: 40px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
-  }
-
-  .news-entry {
-    flex-direction: column;
-  }
-
-  .news-entry img {
-    width: 100%;
-  }
-
-  .news-date {
-    font-size: 1.4em;
-  }
-
-  main {
-    padding: 20px 15px;
-  }
-}
+  letter-spacing: 1px;
+  border: 2px solid
