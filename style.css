@@ -2,26 +2,30 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #3F4A5A;
   color: #000;
   font-family: Georgia, 'Times New Roman', serif;
   line-height: 1.5;
 }
 
-/* Banner header - grayscale photo style */
+/* White framed content area */
+.site-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+/* Banner header */
 header.banner {
   width: 100%;
-  height: 220px;
-  background-color: #1a1a1a;
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%);
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
+  background-color: #3F4A5A;
+  padding: 40px;
   border-bottom: 3px solid #000;
 }
 
@@ -30,20 +34,18 @@ header.banner h1 {
   font-size: 3.2em;
   font-style: italic;
   font-family: Georgia, serif;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
   margin: 0;
 }
 
 .page-layout {
   display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 30px 20px;
   gap: 30px;
   align-items: flex-start;
+  background-color: #ffffff;
 }
 
-/* Sidebar - boxed nav, like the original "Navigation" panel */
+/* Sidebar nav box */
 nav.sidebar {
   width: 200px;
   flex-shrink: 0;
@@ -59,6 +61,7 @@ nav.sidebar .nav-title {
   border-bottom: 1px solid #999;
   padding-bottom: 8px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 nav.sidebar a {
@@ -76,9 +79,9 @@ nav.sidebar a:hover {
 main {
   flex: 1;
   min-width: 0;
+  background-color: #ffffff;
 }
 
-/* Italic script-style section titles, like "Site News" */
 h2.section-title {
   font-family: Georgia, serif;
   font-style: italic;
@@ -91,6 +94,7 @@ h2.section-title {
   margin-bottom: 25px;
 }
 
+/* Homepage park list */
 .park-list {
   list-style: none;
   padding: 0;
@@ -130,35 +134,7 @@ h2.section-title {
   color: #cc0000;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85em;
-  color: #777;
-  border-top: 1px solid #ccc;
-  margin-top: 20px;
-}
-
-@media (max-width: 700px) {
-  .page-layout {
-    flex-direction: column;
-  }
-
-  nav.sidebar {
-    width: 100%;
-  }
-
-  header.banner h1 {
-    font-size: 2em;
-  }
-
-  header.banner {
-    height: 140px;
-    padding-left: 20px;
-  }
-}
-
-/* Gallery grid - two columns, collapses to one on mobile */
+/* Gallery grid */
 .update-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -201,27 +177,33 @@ footer {
   font-size: 1em;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
 @media (max-width: 700px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  nav.sidebar {
+    width: 100%;
+  }
+
+  header.banner h1 {
+    font-size: 2em;
+  }
+
+  header.banner {
+    padding: 20px;
+  }
+
   .update-grid {
     grid-template-columns: 1fr;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #3F4A5A;
-  color: #000;
-  font-family: Georgia, 'Times New Roman', serif;
-  line-height: 1.5;
-}
-
-/* New: content wrapper that creates the "framed page" look */
-.site-wrapper {
-  max-width: 1160px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  min-height: 100vh;
 }
