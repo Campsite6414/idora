@@ -1,6 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #3F4A5A;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.5;
+}
+
+/* White framed content area */
+.site-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+/* Banner header with image */
 header.banner {
   width: 100%;
-  aspect-ratio: 82 / 22; /* adjust to match your image's actual proportions */
+  aspect-ratio: 8 / 1;
   background-image: url('images/bannerdefault.jpg');
   background-size: cover;
   background-position: center;
@@ -23,13 +47,73 @@ header.banner h1 {
   z-index: 1;
 }
 
-@media (max-width: 700px) {
-  header.banner {
-    aspect-ratio: 3 / 1; /* slightly taller ratio on mobile so text still fits comfortably */
-    padding-left: 20px;
-  }
-
-  header.banner h1 {
-    font-size: 1.8em;
-  }
+.page-layout {
+  display: flex;
+  padding: 30px 20px;
+  gap: 30px;
+  align-items: flex-start;
+  background-color: #ffffff;
 }
+
+/* Sidebar nav box */
+nav.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  border: 1px solid #999;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+nav.sidebar .nav-title {
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+nav.sidebar a {
+  display: block;
+  color: #0000cc;
+  text-decoration: underline;
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+nav.sidebar a:hover {
+  color: #cc0000;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  background-color: #ffffff;
+}
+
+h2.section-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #222;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* Homepage park list */
+.park-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.park-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px
