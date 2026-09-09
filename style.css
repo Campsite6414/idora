@@ -206,3 +206,22 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3F4A5A;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.5;
+}
+
+/* New: content wrapper that creates the "framed page" look */
+.site-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  min-height: 100vh;
+}
