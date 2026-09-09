@@ -9,7 +9,6 @@ document.getElementById("site-nav").innerHTML = `
     <div class="nav-title">Navigation</div>
     <a href="/">Home</a>
     <a href="/gallery.html">Photo Gallery</a>
-    <a href="/history.html">History</a>
     <a href="/about.html">About</a>
   </nav>
 `;
