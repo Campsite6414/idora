@@ -191,6 +191,25 @@ footer {
   border-top: 1px solid #ccc;
   background-color: #ffffff;
 }
+
+
+.intro-text {
+  font-size: 1.15em;
+  max-width: 650px;
+}
+
+.stat-line {
+  font-style: italic;
+  color: #555;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+
+
+
 @media (max-width: 700px) {
   .page-layout {
     flex-direction: column;
