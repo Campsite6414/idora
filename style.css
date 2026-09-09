@@ -191,13 +191,14 @@ footer {
   border-top: 1px solid #ccc;
   background-color: #ffffff;
 }
-
 @media (max-width: 700px) {
   .page-layout {
     flex-direction: column;
+    align-items: stretch;
   }
 
   nav.sidebar {
+    flex: none;
     width: 100%;
     max-width: none;
   }
