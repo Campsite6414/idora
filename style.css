@@ -183,16 +183,26 @@ h2.section-title {
   font-size: 1em;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85em;
-  color: #777;
-  border-top: 1px solid #ccc;
-  background-color: #ffffff;
+/* Individual photo display, for visit/album pages */
+.photo-entry {
+  margin-bottom: 40px;
+  max-width: 600px;
 }
 
+.photo-entry img {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #000;
+  display: block;
+  margin-bottom: 8px;
+}
 
+.photo-entry .update-desc {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Intro/stat line, homepage */
 .intro-text {
   font-size: 1.15em;
   max-width: 650px;
@@ -207,8 +217,14 @@ footer {
   display: inline-block;
 }
 
-
-
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
 
 @media (max-width: 700px) {
   .page-layout {
