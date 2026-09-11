@@ -1,9 +1,8 @@
 const siteConfig = {
   name: "Idora",
-  titleSuffix: " - Idora Archive",
 };
 
-document.title = document.title + siteConfig.titleSuffix;
+document.title = document.title + " - " + siteConfig.name;
 
 document.getElementById("site-header").innerHTML = `
   <header class="banner">
