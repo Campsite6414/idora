@@ -17,6 +17,7 @@ document.getElementById("site-nav").innerHTML = `
     <a href="/archive-photos.html">Archive Photos</a>
     <a href="/new-visits.html">New Visits</a>
     <a href="/lost-media.html">Lost Media</a>
+    <a href="/video-archive.html">Video Archive</a>
     <a href="/coaster-games.html">Coaster Games</a>
     <a href="/news-vault.html">News Vault</a>
     <a href="/site-history.html">Site History</a>
