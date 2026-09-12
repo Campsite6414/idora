@@ -239,6 +239,16 @@ footer {
     max-width: none;
   }
 
+nav.sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 15px;
+}
+
+nav.sidebar .nav-title {
+  grid-column: 1 / -1;
+}
+  
   header.banner {
     aspect-ratio: 3 / 1;
     padding-left: 20px;
