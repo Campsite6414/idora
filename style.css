@@ -141,7 +141,6 @@ h2.section-title {
   color: #cc0000;
 }
 
-/* Card grid - used on homepage, gallery, and park hub pages */
 .update-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,6 +155,12 @@ h2.section-title {
   width: 100%;
   height: 220px;
   margin-bottom: 12px;
+}
+
+.update-card .thumb-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .update-card h3 {
@@ -184,7 +189,7 @@ h2.section-title {
   font-size: 1em;
 }
 
-/* Individual photo display, for visit/album pages */
+/* Archive Photos - smaller, capped size for low-res recovered images */
 .photo-entry {
   margin-bottom: 40px;
   max-width: 600px;
@@ -199,6 +204,24 @@ h2.section-title {
 }
 
 .photo-entry .update-desc {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* New Visits - larger display for modern, high-quality photos */
+.photo-entry-large {
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.photo-entry-large img {
+  width: 100%;
+  border: 1px solid #000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.photo-entry-large .update-desc {
   margin: 0;
   font-size: 1em;
 }
@@ -237,18 +260,15 @@ footer {
     flex: none;
     width: 100%;
     max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 15px;
   }
 
-nav.sidebar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 15px;
-}
+  nav.sidebar .nav-title {
+    grid-column: 1 / -1;
+  }
 
-nav.sidebar .nav-title {
-  grid-column: 1 / -1;
-}
-  
   header.banner {
     aspect-ratio: 3 / 1;
     padding-left: 20px;
