@@ -1,0 +1,5 @@
+# ***** DELETE OR EDIT BEFORE GOING PUBLIC *****
+# ***** CURRENTLY BLOCKING ALL SEARCH ENGINE CRAWLING SITEWIDE *****
+
+User-agent: *
+Disallow: /
