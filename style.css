@@ -197,6 +197,16 @@ h2.section-title {
 
 .archive-content h2.section-title {
   text-align: center;
+  margin-bottom: 5px;
+}
+
+.archive-subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .archive-back-link {
