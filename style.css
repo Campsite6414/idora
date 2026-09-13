@@ -226,6 +226,34 @@ h2.section-title {
   font-size: 1em;
 }
 
+/* News Vault articles */
+.news-entry {
+  margin-bottom: 40px;
+}
+
+.news-date {
+  font-style: italic;
+  color: #555;
+  margin: 0 0 4px 0;
+  font-size: 0.95em;
+}
+
+.news-title {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.anchor-link a {
+  font-size: 0.85em;
+  color: #888;
+  text-decoration: none;
+}
+
+.anchor-link a:hover {
+  color: #cc0000;
+}
+
 /* Intro/stat line, homepage */
 .intro-text {
   font-size: 1.15em;
