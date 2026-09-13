@@ -189,23 +189,56 @@ h2.section-title {
   font-size: 1em;
 }
 
-/* Archive Photos - smaller, capped size for low-res recovered images */
+/* Archive Photos - centered "scrapbook" layout */
+.archive-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.archive-content h2.section-title {
+  text-align: center;
+}
+
+.archive-back-link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.archive-note {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+}
+
 .photo-entry {
-  margin-bottom: 40px;
-  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
 }
 
 .photo-entry img {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 500px;
+  margin: 0 auto 8px auto;
   border: 1px solid #000;
   display: block;
-  margin-bottom: 8px;
 }
 
 .photo-entry .update-desc {
+  text-align: center;
   margin: 0;
   font-size: 1em;
+}
+
+.archive-narrative {
+  text-align: left;
+}
+
+.archive-footer-note {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* New Visits - larger display for modern, high-quality photos */
