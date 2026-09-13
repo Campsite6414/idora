@@ -244,6 +244,18 @@ h2.section-title {
   color: #000;
 }
 
+.news-thumb {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
 .anchor-link a {
   font-size: 0.85em;
   color: #888;
