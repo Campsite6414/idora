@@ -1,0 +1,2 @@
+     /*
+       Content-Security-Policy: default-src 'self'; script-src 'self'; frame-src https://www.youtube.com; img-src 'self'; style-src 'self'
