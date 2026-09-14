@@ -317,6 +317,17 @@ h2.section-title {
   color: #cc0000;
 }
 
+
+.ext-link {
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+
+.ext-link em {
+  color: #888;
+  font-style: italic;
+}
+
 /* Intro/stat line, homepage */
 .intro-text {
   font-size: 1.15em;
